@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>IP FAQ</title>
+  <style>
+    body {
+      /* background-color: #ffe0f7; */
+
+      background: linear-gradient(#b2ebf2, #ffc1fa, #ffbcbc);
+      height: 100vh
+    }
+
+    .title {
+      position: absolute;
+      top: 30%;
+      left: 20%;
+      transition: translate(-50%, -50%);
+      font-size: 200%;
+    }
+
+    .title h1 {
+      color: #700961;
+
+    }
+
+    .title p {
+      color: #590d82;
+    }
+
+
+
+    #popup {
+      visibility: hidden;
+      position: absolute;
+      top: 3%;
+      left: 67%;
+      transition: translate(-50%, -50%);
+      border-style: outset;
+
+
+    }
+    #first{
+      position: absolute;
+      top: 54%;
+      left: 45%;
+      transition: translate(-50%, -50%);
+      text-decoration: none;
+      color: #4b5d67;
+      background-color: #abf0e9;
+      padding: 5px 20px;
+      border: 2px solid #411f1f;
+      font-weight: 900;
+      font-size: 150%;
+
+    }
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <div class="title">
+    <h1>Internship Program(IP)</h1>
+    <hr>
+    <p>Got any query Related to IP?
+      </p>
+
+
+  </div>
+  <footer>
+    <div id="popup">
+      <iframe src="http://localhost:3000/chat" height="700" width="500">
+      </iframe>
+
+    </div>
+    <input type="button" id="first" value="Chat with us!">
+
+  </footer>
+  <script>
+  document.getElementById("first").addEventListener("click",function(){
+    document.getElementById("popup").style.visibility="visible";
+
+  })
+
+
+
+  </script>
+
+
+</body>
+
+</html>
